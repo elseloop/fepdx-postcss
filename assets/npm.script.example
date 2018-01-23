@@ -1,0 +1,6 @@
+{
+  "script": {
+    "css": "postcss src/css/index.css --output public/styles.css --watch",
+    "css:prod": "postcss src/css/index.css --config postcss.config.prod.json --output public/styles.css"
+  }
+}

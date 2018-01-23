@@ -1,0 +1,3 @@
+/* with postcss-responsive-type (based on ☝️) */
+font-range: 400px 1280px;
+font-size: responsive 1.25rem 3rem;

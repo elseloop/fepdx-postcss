@@ -1,0 +1,8 @@
+.Thing {
+  background-color: tomato;
+  color: bisque;
+  display: flex;
+  /* so it doesn't boop the header */
+  height: calc(100vh - 65px);
+  justify-content: space-between;
+}

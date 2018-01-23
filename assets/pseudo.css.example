@@ -1,0 +1,15 @@
+.Thing {
+  font-size: 2rem;
+  padding-right: 2ch;
+
+  &::after {
+    border-top: .5rem solid black;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    display: inline-block;
+    height: 0;
+    margin-left: 0.5ch;
+    transform: rotate(-90deg);
+    width: 0;
+  }
+}

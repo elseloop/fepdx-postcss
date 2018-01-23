@@ -1,0 +1,12 @@
+:root {
+  --color-red: #B22222;
+}
+
+.Thing {
+  background-color: var(--color-red);
+  /*
+    Compiles to:
+    background-color: #B22222;
+    background-color: var(--color-red);
+  */
+}

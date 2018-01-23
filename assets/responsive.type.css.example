@@ -1,0 +1,5 @@
+/*
+  the Mike Riethmuller method
+  https://www.madebymike.com.au/writing/precise-control-responsive-typography/
+*/
+font-size: calc( 12px + (20 - 12) * ( (100vw - 400px) / ( 800 - 400) ));

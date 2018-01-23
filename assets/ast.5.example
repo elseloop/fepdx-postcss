@@ -1,0 +1,8 @@
+{
+  "type": "decl",
+  "source": {...},
+  "before": "\n   ",
+  "prop": "color",
+  "between": ": ",
+  "value": "bisque"
+}
