@@ -1,7 +1,7 @@
 gulp.task('css', () => {
   const postcss = require("gulp-postcss");
-  const vars = require("cssvariables");
-  const respType = require("responsiveType");
+  const vars = require("postcss-css-variables");
+  const respType = require("postcss-responsive-type");
   const pseudoContent = require("postcss-pseudo-content-insert");
 
   return gulp.src("src/**/*.css")

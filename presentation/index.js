@@ -316,9 +316,10 @@ export default class Presentation extends React.Component {
         {/* SLIDE FIVE */}
         <Slide transition={["fade"]} bgImage={images.barnTools} bgDarken={0.8}>
           <Notes>
+            <p>“Tool” is <em>intentionally</em> vague</p>
+            <p>At least one person thinking WHY DO WE NEED JS TO DO ANYTHING TO CSS?!</p>
             <p>The initial Sass release was in 2006.</p>
             <p>The initial PostCSS release was in November 2013.</p>
-            <p>“Tool” is <em>intentionally</em> vague</p>
           </Notes>
           <Image src={images.postcssLogo} />
           <Heading size="3" textColor="primary" lineHeight="1.2" fill bold>“A tool for processing CSS with JavaScript”</Heading>
@@ -339,6 +340,7 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} bgImage={images.craner} bgDarken={0.5}>
           <Notes>
             <p>Do first three points, riff on them, then do last point.</p>
+            <p>Sassscript, syntax, looping, functions, etc</p>
           </Notes>
           <Heading size="3" textColor="primary" lineHeight="1.2" fill bold>
             Unlike <br />
@@ -407,7 +409,7 @@ export default class Presentation extends React.Component {
             <p>An AST is just a structured data graph. It makes static analysis and manipulation really easy.</p>
             <p>And in the course of using PostCSS, there's absolutely no reason you'd need to think about ASTs at all. (Unless you're writing a plugin.)</p>
             <p>BUT!</p>
-            <p>I’m a big proponent of making our tools feel less like magic. We don’t need to be able to replicate what they’re doing on a whiteboard, but having some clear sense of how they do what they do comes in handy when debugging or when you need them to do something they’re not currently doing already.</p>
+            <p>I’m a big proponent of making our tools feel less like magic. We don’t need to be able to replicate on a whiteboard what they’re doing, but having some clear sense of how they do what they do comes in handy when debugging or when you need to extend them to do something they’re not currently doing already.</p>
             <p>Looking at ASTs will also inform what we’ll look at next, so let’s dig in!</p>
             <p>So…</p>
           </Notes>
@@ -429,6 +431,7 @@ export default class Presentation extends React.Component {
         {/* SLIDE ELEVEN */}
         <Slide transition={["fade"]} bgColor="blue">
           <Notes>
+            <p>I know you can't read this and that's ok!</p>
             <p>It's an object! There's a "nodes" key that's an array of objects, which itself has a "nodes" object that's an array of objects...</p>
             <p>This is a garaunteed headache if we try to read it, so let's take it in pieces...</p>
           </Notes>
@@ -559,7 +562,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         {/* SLIDE TWENTY */}
-        <Slide transition={["fade"]} bgImage={images.sunsetCranes} bgDarken={0.25}>
+        <Slide transition={["fade"]} bgImage={images.sunsetCranes} bgDarken={0.66}>
           <Notes>
             <p>I'm gonna go into detail on a few plugins I like for different reasons, but here are some other...</p>
             <p>If you prefer Sass-like variables, nesting, even looping or mixins, PostCSS can do that.</p>
@@ -724,10 +727,7 @@ export default class Presentation extends React.Component {
 
         {/* SLIDE TWENTY-EIGHT */}
         <Slide transition={["fade"]} bgColor="blue">
-          <Notes>
-            <p>You’re basically defining what plugins you want to use and then calling them. Passing any options to the individual plugins as needed.</p>
-          </Notes>
-          <Heading margin="0 0 .5em" size={3} textColor="primary" fill caps>
+          <Heading margin="0 0 .5em" size={3} textColor="secondary" fill caps>
             postcss.config.js
           </Heading>
 
@@ -742,7 +742,7 @@ export default class Presentation extends React.Component {
 
         {/* SLIDE TWENTY-NINE */}
         <Slide transition={["fade"]} bgColor="blue">
-          <Heading margin="0 0 .5em" size={3} textColor="primary" fill caps>
+          <Heading margin="0 0 .5em" size={3} textColor="secondary" fill caps>
             npm scripts
           </Heading>
 
@@ -761,7 +761,7 @@ export default class Presentation extends React.Component {
           <Notes>
             <p>Basically the same as using npm scripts, but you're using keeping things in Webpack.</p>
           </Notes>
-          <Heading margin="0 0 .5em" size={3} textColor="primary" fill caps>
+          <Heading margin="0 0 .5em" size={3} textColor="secondary" fill caps>
             Webpack
           </Heading>
 
