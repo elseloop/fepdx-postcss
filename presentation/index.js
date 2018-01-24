@@ -258,13 +258,14 @@ export default class Presentation extends React.Component {
         {/* SLIDE TWO */}
         <Slide transition={["fade"]} bgColor="red">
           <Notes>
-            <ul>
-              <li>Dan</li>
-              <li>I go by elseloop most everywhere and usually look like one of these three</li>
-              <li>I am, for the next three days, a senior software engineer and the front end practice lead here at CDX.</li>
-              <li>Beginning next week, I'll be a partner at Turn Agnecy</li>
-              <li>(I'm excited!)</li>
-            </ul>
+            <List>
+              <ListItem>Dan</ListItem>
+              <ListItem>I go by elseloop most everywhere and usually look like one of these three pictures</ListItem>
+              <ListItem>One of the co-organizers of FEPDX</ListItem>
+              <ListItem>I am, for the next three days, a senior software engineer and the front end practice lead here at CDX.</ListItem>
+              <ListItem>Beginning next week, I'll be a partner at Turn Agency</ListItem>
+              <ListItem>(I'm excited!)</ListItem>
+            </List>
           </Notes>
           <Heading size={2} textColor="primary" margin="0 0 4rem">Dan Manchester</Heading>
 
@@ -342,13 +343,13 @@ export default class Presentation extends React.Component {
             <p>Do first three points, riff on them, then do last point.</p>
             <p>Sassscript, syntax, looping, functions, etc</p>
           </Notes>
-          <Heading size="3" textColor="primary" lineHeight="1.2" fill bold>
-            Unlike <br />
-            <Image style={{ position: "relative", top: "18px" }} display="inline-block" width="100px" src={images.sassLogo} />
+          <Heading margin="0" size="3" textColor="primary" lineHeight="1" fill bold>Unlike</Heading>
+          <Heading margin="0" size="3" textColor="primary" lineHeight="1" fill bold>
+            <Image margin="0" style={{ position: "relative", top: "8px" }} display="inline-block" width="100px" src={images.sassLogo} />
             &nbsp; or &nbsp;
-            <Image style={{ position: "relative", top: "10px" }} display="inline-block" width="125px" src={images.lessLogo} />
-            <br />
-            PostCSS…</Heading>
+            <Image margin="0" style={{ position: "relative", top: "8px" }} display="inline-block" width="125px" src={images.lessLogo} />
+          </Heading>
+          <Heading margin="0" size="3" textColor="primary" lineHeight="1" fill bold>PostCSS…</Heading>
           <List textColor="primary" bold>
             <Appear>
               <ListItem>isn’t a preprocessor</ListItem>
@@ -378,28 +379,28 @@ export default class Presentation extends React.Component {
           </Notes>
           <Text textSize="4rem">👩🏽‍💻</Text>
           <Appear>
-            <Text margin="1rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
-            <Heading margin="1rem 0 0" size={2} textColor="primary" fill>CSS</Heading>
+            <Heading size={2} textColor="primary" fill>CSS</Heading>
           </Appear>
           <Appear>
-            <Text margin="1rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
-            <Heading margin="1rem 0 0" size={2} textColor="primary" fill>AST</Heading>
+            <Heading size={2} textColor="primary" fill>AST</Heading>
           </Appear>
           <Appear>
-            <Text margin="1rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
-            <Heading margin="1rem 0 0" size={2} textColor="primary" fill>CSS</Heading>
+            <Heading size={2} textColor="primary" fill>CSS</Heading>
           </Appear>
           <Appear>
-            <Text margin="1rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
-            <Text margin="1rem 0 0" textSize="4rem">👩🏾‍💻</Text>
+            <Text textSize="4rem">👩🏾‍💻</Text>
           </Appear>
         </Slide>
 
@@ -503,7 +504,7 @@ export default class Presentation extends React.Component {
         {/* SLIDE SEVENTEEN */}
         <Slide transition={["fade"]} bgColor="blue">
           <Notes>
-            <p>Really east to see where this structure comes in handy as a way of processing and/or manipulating the original CSS.</p>
+            <p>Really easy to see where this structure comes in handy as a way of processing and/or manipulating the original CSS.</p>
             <ul>
               <li>Knowing where all the comments are makes it easy to strip them out or build something from them or look for specific strings at the front of comments to pull out for some other reason</li>
               <li>Kowing what's between a property and a value means you can catch typos.</li>
@@ -529,27 +530,27 @@ export default class Presentation extends React.Component {
             <p>But it's stupid fast, because.</p>
           </Notes>
           <Text textSize="4rem">👩🏽‍💻</Text>
-          <Heading margin="1rem 0 0" size={4} textColor="primary" fill>CSS</Heading>
+          <Heading size={4} textColor="primary" fill>CSS</Heading>
           <Appear>
-            <Text margin="1rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
-            <Heading margin="1rem 0 0" size={4} textColor="primary" fill>AST</Heading>
+            <Heading size={4} textColor="primary" fill>AST</Heading>
           </Appear>
           <Appear>
-            <Text margin="1rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
-            <Heading margin="1rem 0 0" size={4} textColor="blue" fill>Plugins!</Heading>
+            <Heading size={4} textColor="blue" fill caps>Plugins!</Heading>
           </Appear>
           <Appear>
-            <Text margin="2rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
-            <Heading margin="1rem 0 0" size={4} textColor="primary" fill>CSS</Heading>
+            <Heading size={4} textColor="primary" fill>CSS</Heading>
           </Appear>
           <Appear>
-            <Text margin="1rem 0 0">👇</Text>
+            <Text>👇</Text>
           </Appear>
           <Appear>
             <Text textSize="4rem">👩🏾‍🎤</Text>
@@ -570,13 +571,12 @@ export default class Presentation extends React.Component {
             <p>Use upcoming CSS syntax. Be weary of this one—sometimes the spec changes and then your codebase is left with out of date code that will always need the PostCSS plugin to work.</p>
             <p>Backcompat: gaurd against multiple syntaxes (Autoprefixer!)</p>
             <p>Built-in or CSS Nano is the big one for minimizing.</p>
-            <p>LostGrid?</p>
             <p>If you're not already using some of these and want to, there's a TON of info out there on them, so Google about and you'll strike gold.</p>
             <p>I wanna touch on some lesser known ones…</p>
           </Notes>
           <Heading margin="0 0 .25rem" size="3" textColor="primary" fit bold lineHeight="1.2">Plugins do the heavy lifting in PostCSS.</Heading>
           <Appear>
-            <Heading margin="0 0 2rem" size="4" textColor="primary" fill bold lineHeight="1.2">Plugins can…</Heading>
+            <Heading margin="0 0 1rem" size="3" textColor="primary" fill bold>Plugins can…</Heading>
           </Appear>
           <List textColor="primary" fit bold>
             <Appear>
@@ -595,16 +595,13 @@ export default class Presentation extends React.Component {
               <ListItem margin=".5em 0 0">…make your code production-ready</ListItem>
             </Appear>
             <Appear>
-              <ListItem margin=".5em 0 0">…provide a whole bunch of readymade solutions—grids, typography, etc.</ListItem>
-            </Appear>
-            <Appear>
               <ListItem margin=".5em 0 0">…make writing CSS easier &amp; more efficient</ListItem>
             </Appear>
           </List>
         </Slide>
 
         {/* SLIDE TWENTY-ONE */}
-        <Slide transition={["fade"]} bgImage={images.stairs} bgDarken={0.25}>
+        <Slide transition={["fade"]} bgImage={images.stairs} bgDarken={0.5}>
           <Heading margin="0 0 .25em" lineHeight="1.2" size={1} textColor="blue" fill caps>
              👀<br />Some examples!
           </Heading>
@@ -727,7 +724,7 @@ export default class Presentation extends React.Component {
 
         {/* SLIDE TWENTY-EIGHT */}
         <Slide transition={["fade"]} bgColor="blue">
-          <Heading margin="0 0 .5em" size={3} textColor="secondary" fill caps>
+          <Heading textSize="4vh" size={2} textColor="secondary" caps>
             postcss.config.js
           </Heading>
 
@@ -796,9 +793,9 @@ export default class Presentation extends React.Component {
 
         {/* SLIDE TWENTY-FOUR */}
         <Slide transition={["fade"]} bgImage={images.sparks} bgDarken={0.66}>
-          <RainbowText margin="0 0 2em" textFont="secondary" textSize="18vh" size="1" textColor="primary" lineHeight="1.2" fill bold>Thank you!</RainbowText>
-
-          <Heading size="5" textColor="primary" lineHeight="1.2">🧔🏻<br />Dan Manchester<br />@elseloop</Heading>
+          <RainbowText margin="0 0 .25em" textFont="secondary" textSize="18vh" size="1" textColor="primary" lineHeight="1.2" fill bold>Thank you!</RainbowText>
+          <RainbowText margin="0 0 .5em">🧔🏻</RainbowText>
+          <Heading size="5" textColor="primary" lineHeight="1.2">Dan Manchester<br />@elseloop</Heading>
         </Slide>
       </Deck>
     );
